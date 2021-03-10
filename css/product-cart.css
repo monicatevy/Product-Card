@@ -12,18 +12,24 @@
   --gray-400: hsl(0, 0%, 74%);
   --gray-500: hsl(0, 0%, 98%); */
 
-  /* hue, saturation(%), lightness(%) TINTED GRAYS
+  /* hue, saturation(%), lightness(%) TINTED GRAYS */
   --gray-100: hsl(148, 30%, 13%);
   --gray-200: hsl(148, 20%, 31%);
   --gray-300: hsl(148, 10%, 48%);
   --gray-400: hsl(148, 10%, 74%);
-  --gray-500: hsl(148, 10%, 98%); */
+  --gray-500: hsl(148, 10%, 98%);
 
   --green-100: hsl(148, 100%, 8%);
   --green-200: hsl(148, 100%, 14%);
   --green-300: hsl(148, 100%, 20%);
   --green-400: hsl(148, 50%, 40%);
   --green-500: hsl(148, 50%, 96%);
+
+  --maroon-100: hsl(348, 100%, 8%);
+  --maroon-200: hsl(348, 100%, 14%);
+  --maroon-300: hsl(348, 100%, 20%);
+  --maroon-400: hsl(348, 50%, 40%);
+  --maroon-500: hsl(348, 50%, 96%);
 }
 
 html {
@@ -71,7 +77,7 @@ body {
 }
 
 .card__meta {
-  color: var(--green-300);
+  color: var(--gray-300);
   position: relative;
   display: inline-block;
   margin-bottom: 0.75rem;
@@ -81,7 +87,6 @@ body {
 }
 
 .card__meta:before {
-  color: var(--green-200);
   position: absolute;
   top: 50%;
   right: 0;
@@ -89,7 +94,7 @@ body {
   content: "";
   width: 0.25rem;
   height: 0.25rem;
-  background: var(--green-200);
+  background: var(--green-400);
   border-radius: 50%;
 }
 
@@ -99,7 +104,7 @@ body {
 }
 
 .card__title {
-  color: var(--green-100);
+  color: var(--gray-100);
   font-size: 1.5rem;
   line-height: 1.5rem;
   font-weight: 600;
@@ -107,7 +112,8 @@ body {
 }
 
 .card__heart {
-  color: var(--green-300);
+  color: var(--maroon-300);
+  fill: var(--maroon-500);
   width: 1rem;
   height: 1rem;
   margin-top: 0.25rem;
@@ -115,7 +121,7 @@ body {
 }
 
 .card__description {
-  color: var(--green-200);
+  color: var(--gray-200);
   margin-bottom: 2.25rem;
   font-size: 0.875rem;
   line-height: 1.5rem;
@@ -144,8 +150,8 @@ body {
 
 .card__btn--outline {
   background: white;
-  color: var(--green-200);
-  border: 1px solid var(--green-400);
+  color: var(--gray-200);
+  border: 1px solid var(--gray-400);
 }
 
 @media only screen and (max-width: 480px) {
