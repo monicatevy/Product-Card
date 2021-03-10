@@ -12,24 +12,47 @@
   --gray-400: hsl(0, 0%, 74%);
   --gray-500: hsl(0, 0%, 98%); */
 
-  /* hue, saturation(%), lightness(%) TINTED GRAYS */
+  /* hue, saturation(%), lightness(%) GREEN TINTED GRAYS */
   --gray-100: hsl(148, 30%, 13%);
   --gray-200: hsl(148, 20%, 31%);
   --gray-300: hsl(148, 10%, 48%);
   --gray-400: hsl(148, 10%, 74%);
   --gray-500: hsl(148, 10%, 98%);
 
+  /* hue, saturation(%), lightness(%) GREEN PRIMARY COLOR */
   --green-100: hsl(148, 100%, 8%);
   --green-200: hsl(148, 100%, 14%);
   --green-300: hsl(148, 100%, 20%);
   --green-400: hsl(148, 50%, 40%);
   --green-500: hsl(148, 50%, 96%);
 
+  /* hue, saturation(%), lightness(%) MAROON COMPLEMENTARY COLOR */
   --maroon-100: hsl(348, 100%, 8%);
   --maroon-200: hsl(348, 100%, 14%);
   --maroon-300: hsl(348, 100%, 20%);
   --maroon-400: hsl(348, 50%, 40%);
   --maroon-500: hsl(348, 50%, 96%);
+
+  /* hue, saturation(%), lightness(%) BLUE TINTED GRAYS */
+  --bluegray-100: hsl(190, 30%, 13%);
+  --bluegray-200: hsl(190, 20%, 31%);
+  --bluegray-300: hsl(190, 10%, 48%);
+  --bluegray-400: hsl(190, 10%, 74%);
+  --bluegray-500: hsl(190, 10%, 98%);
+
+  /* hue, saturation(%), lightness(%) BLUE PRIMARY COLOR GRAYS */
+  --blue-100: hsl(190, 90%, 6%);
+  --blue-200: hsl(190, 80%, 26%);
+  --blue-300: hsl(190, 70%, 46%);
+  --blue-400: hsl(190, 60%, 76%);
+  --blue-500: hsl(190, 50%, 96%);
+
+  /* hue, saturation(%), lightness(%) ORANGE COMPLEMENTARY COLOR */
+  --orange-100: hsl(20, 90%, 6%);
+  --orange-200: hsl(20, 80%, 26%);
+  --orange-300: hsl(20, 70%, 46%);
+  --orange-400: hsl(20, 60%, 76%);
+  --orange-500: hsl(20, 50%, 96%);
 }
 
 html {
@@ -46,30 +69,48 @@ body {
   line-height: 1;
 }
 
+.container {
+  display: flex;
+}
+
 .card {
   max-width: 26rem;
   min-width: 16rem;
-  margin-top: 3rem;
   background: white;
-  color: var(--green-100);
   border-radius: 1rem;
   overflow: hidden;
   box-shadow: 0px 2px 4px 0px rgb(0 0 0 / 8%);
 }
 
+#card_1 {
+  color: var(--green-100);
+}
+
+#card_2 {
+  color: var(--blue-100);
+  margin-top: 6rem;
+}
+
 .card__img-wrapper {
-  background: var(--green-500);
   display: grid;
   place-items: center;
   margin-bottom: 2rem;
   padding: 2rem;
 }
 
+#card__img-wrapper_1 {
+  background: var(--green-500);
+}
+
+#card__img-wrapper_2 {
+  background: var(--blue-500);
+}
+
 .card__content-wrapper {
   padding: 0 2rem 2rem;
 }
 
-.card__img {
+.card__img, .card__img_2 {
   width: 50%;
   max-width: 6rem;
   /* card image is shown once twemoji has parsed */
@@ -77,13 +118,20 @@ body {
 }
 
 .card__meta {
-  color: var(--gray-300);
   position: relative;
   display: inline-block;
   margin-bottom: 0.75rem;
   padding-right: 0.75rem;
   font-size: 0.75rem;
   line-height: 0.75rem;
+}
+
+#card__meta_1 {
+  color: var(--gray-300);
+}
+
+#card__meta_2 {
+  color: var(--bluegray-300);
 }
 
 .card__meta:before {
@@ -94,8 +142,15 @@ body {
   content: "";
   width: 0.25rem;
   height: 0.25rem;
-  background: var(--green-400);
   border-radius: 50%;
+}
+
+#card__meta_1:before {
+  background: var(--green-400);
+}
+
+#card__meta_2:before {
+  background: var(--blue-400);
 }
 
 .card__header {
@@ -104,29 +159,51 @@ body {
 }
 
 .card__title {
-  color: var(--gray-100);
   font-size: 1.5rem;
   line-height: 1.5rem;
   font-weight: 600;
   letter-spacing: -0.025em;
 }
 
+#card__title_1 {
+  color: var(--gray-100);
+}
+
+#card__title_2 {
+  color: var(--bluegray-100);
+}
+
 .card__heart {
-  color: var(--maroon-300);
-  fill: var(--maroon-500);
   width: 1rem;
   height: 1rem;
   margin-top: 0.25rem;
   margin-left: auto;
 }
 
+#card__heart_1 {
+  color: var(--maroon-300);
+  fill: var(--maroon-500);
+}
+
+#card__heart_2 {
+  color: var(--orange-300);
+  fill: var(--orange-500);
+}
+
 .card__description {
-  color: var(--gray-200);
   margin-bottom: 2.25rem;
   font-size: 0.875rem;
   line-height: 1.5rem;
   hyphens: auto;
   -webkit-hyphens: auto;
+}
+
+#card__description_1 {
+  color: var(--gray-200);
+}
+
+#card__description_2 {
+  color: var(--bluegray-100);
 }
 
 .card__footer {
@@ -141,17 +218,31 @@ body {
   font-size: 0.875rem;
   font-family: inherit;
   font-weight: 500;
-  background: var(--green-300);
-  color: var(--green-500);
   border: none;
   border-radius: 0.5rem;
   cursor: pointer;
 }
 
-.card__btn--outline {
+#card__btn_1 {
+  background: var(--green-300);
+  color: var(--green-500);
+}
+
+#card__btn_2 {
+  background: var(--blue-300);
+  color: var(--blue-500);
+}
+
+#card__btn--outline_1 {
   background: white;
   color: var(--gray-200);
   border: 1px solid var(--gray-400);
+}
+
+#card__btn--outline_2 {
+  background: white;
+  color: var(--bluegray-200);
+  border: 1px solid var(--bluegray-400);
 }
 
 @media only screen and (max-width: 480px) {
@@ -168,12 +259,19 @@ body {
   }
 }
 
-.color_container {
+.container_card_1, .container_card_2 {
   display: flex;
-  margin-top: 12rem;
+  margin-top: -0.75rem;
   margin-bottom: 1rem;
 }
 
+.container_color {
+  display: flex;
+  justify-content: center;
+  margin-bottom: -0.75rem;
+}
+
 .color_palette {
-  padding: 0.75rem;
+  padding: 0rem;
+  margin-left: 1rem;
 }

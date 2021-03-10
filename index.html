@@ -19,40 +19,42 @@
     <link rel="shortcut icon" href="images/plant.png">
   </head>
   <body>
-    <div class="card">
-      <div class="card__img-wrapper">
-        <div class="card__img" role="img">🪴</div>
-      </div>
-      <div class="card__content-wrapper">
-        <p class="card__meta">Indoor Plant</p>
-        <div class="card__header">
-          <h1 class="card__title">Zamioculcas Zamiifolia</h1>
-          <svg class="card__heart" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
-          </svg>
+  <div class="container_card_1">
+      <div class="card" id="card_1">
+        <div class="card__img-wrapper" id="card__img-wrapper_1">
+          <div class="card__img" role="img">🪴</div>
         </div>
-        <p class="card__description">Zamioculcas zamiifolia is simple to care for, requiring little maintenance. Tolerates low to bright indirect light, and watering when fully dry. A slow grower, this plant will form a dense clump, growing to about 2′ tall and 1-2′ wide.</br></br>Ships in a 4″ plastic nursery pot. Each specimen has multiple stems, about 4-6″ tall. Leaves measure about 1-2″. Some natural variation in size and appearance may occur.</p>
-        <div class="card__footer">
-          <button class="card__btn card__btn--outline">Add to cart</button>
-          <button class="card__btn">Buy now</button>
+        <div class="card__content-wrapper">
+          <p class="card__meta" id="card__meta_1">Indoor Plant</p>
+          <div class="card__header">
+            <h1 class="card__title" id="card__title_1">Zamioculcas Zamiifolia</h1>
+            <svg class="card__heart" id="card__heart_1" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+            </svg>
+          </div>
+          <p class="card__description" id="card__description_1">Zamioculcas zamiifolia is simple to care for, requiring little maintenance. Tolerates low to bright indirect light, and watering when fully dry. A slow grower, this plant will form a dense clump, growing to about 2′ tall and 1-2′ wide.</br></br>Ships in a 4″ plastic nursery pot. Each specimen has multiple stems, about 4-6″ tall. Leaves measure about 1-2″. Some natural variation in size and appearance may occur.</p>
+          <div class="card__footer">
+            <button class="card__btn" id="card__btn--outline_1">Add to cart</button>
+            <button class="card__btn" id="card__btn_1">Buy now</button>
+          </div>
         </div>
       </div>
-    </div>
-    <script type="text/javascript">
-    const productImage = document.querySelector(".card__img");
+      <script type="text/javascript">
+      const productImage = document.querySelector(".card__img");
 
-    // replace the emoji with an svg version that will scale to larger sizes
-    twemoji.parse(productImage, {
-      folder: "svg",
-      ext: ".svg",
-      callback: function (icon, options, variant) {
-        productImage.style.display = "block";
+      // replace the emoji with an svg version that will scale to larger sizes
+      twemoji.parse(productImage, {
+        folder: "svg",
+        ext: ".svg",
+        callback: function (icon, options, variant) {
+          productImage.style.display = "block";
 
-        return "".concat(options.base, options.size, "/", icon, options.ext);
-      }
-    });
-  </script>
-  <div class="color_container">
+          return "".concat(options.base, options.size, "/", icon, options.ext);
+        }
+      });
+    </script>
+  </div>
+  <div class="container_color">
     <div class="color_palette">
       <!-- Coolors Palette Widget -->
       <script src="https://coolors.co/palette-widget/widget.js"></script>
@@ -72,6 +74,63 @@
       <!-- Coolors Palette Widget -->
       <script src="https://coolors.co/palette-widget/widget.js"></script>
       <script data-id="02423202848822652">new CoolorsPaletteWidget("02423202848822652", ["290008","47000e","660014","993347","faf0f2"]); </script>
+    </div>
+  </div>
+  <div class="container_card_2">
+    <div class="card" id="card_2">
+      <div class="card__img-wrapper" id="card__img-wrapper_2">
+        <div class="card__img_2" role="img">🤿</div>
+      </div>
+      <div class="card__content-wrapper">
+        <p class="card__meta" id="card__meta_2">Continuing-Education</p>
+        <div class="card__header">
+          <h1 class="card__title" id="card__title_2">Rescue Diver</h1>
+          <svg class="card__heart" id="card__heart_2" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+          </svg>
+        </div>
+        <p class="card__description" id="card__description_2">Learn to prevent and manage problems in the water, and become more confident in your skills as a diver. It's challenging, yet very rewarding.</br></br>During the course you'll become a better buddy by enhancing your ability to identify potential problems and by practicing dive emergency protocol. The subject is serious but the training is fun - many divers tell us the Rescue Diver course was their favorite!</p>
+        <div class="card__footer">
+          <button class="card__btn" id="card__btn--outline_2">Add to cart</button>
+          <button class="card__btn" id="card__btn_2">Learn more</button>
+        </div>
+      </div>
+    </div>
+    <script type="text/javascript">
+      const productImage2 = document.querySelector(".card__img_2");
+
+      // replace the emoji with an svg version that will scale to larger sizes
+      twemoji.parse(productImage2, {
+        folder: "svg",
+        ext: ".svg",
+        callback: function (icon, options, variant) {
+          productImage2.style.display = "block";
+
+          return "".concat(options.base, options.size, "/", icon, options.ext);
+        }
+      });
+    </script>
+  </div>
+  <div class="container_color">
+    <div class="color_palette">
+        <!-- Coolors Palette Widget -->
+      <script src="https://coolors.co/palette-widget/widget.js"></script>
+      <script data-id="05724920308598302">new CoolorsPaletteWidget("05724920308598302", ["212121","4f4f4f","7a7a7a","bdbdbd","fafafa"]); </script>
+    </div>
+    <div class="color_palette">
+        <!-- Coolors Palette Widget -->
+      <script src="https://coolors.co/palette-widget/widget.js"></script>
+      <script data-id="0950367348456036">new CoolorsPaletteWidget("0950367348456036", ["18272a","3f595f","6e8387","b6c1c3","f9fafa"]); </script>
+    </div>
+    <div class="color_palette">
+        <!-- Coolors Palette Widget -->
+      <script src="https://coolors.co/palette-widget/widget.js"></script>
+      <script data-id="02257504060721699">new CoolorsPaletteWidget("02257504060721699", ["02181d","0d6677","23acc7","9ddae7","f0f8fa"]); </script>
+    </div>
+    <div class="color_palette">
+        <!-- Coolors Palette Widget -->
+      <script src="https://coolors.co/palette-widget/widget.js"></script>
+      <script data-id="06538837112130681">new CoolorsPaletteWidget("06538837112130681", ["1d0b02","77310d","c75a23","e7b69d","faf3f0"]); </script>
     </div>
   </div>
   </body>
